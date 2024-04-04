@@ -1,3 +1,156 @@
-html {
-    background-color: red;
+a {
+    color: inherit;
+}
+
+.message-wrapper {
+    writing-mode: vertical-rl;
+}
+
+.message.hide-message {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.item:last-of-type .hr-collection {
+    display: none;
+}
+
+.item:last-of-type .collection-item,
+.item:last-of-type .collection-item--secondary {
+    margin-bottom: none;
+}
+
+.noise {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    opacity: .05;
+}
+
+a {
+    color: inherit;
+}
+
+/* Light mode */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .text-black {
+    color: #fff;
+}
+
+body.light-mode .background-white {
+    background-color: #000;
+}
+
+body.light-mode .button {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light-mode .button-inverse {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .lightbox-link {
+    border-color: #000;
+}
+
+body.light-mode .drop-wrapper {
+    filter: invert(1);
+}
+
+body.light-mode .giving-brand {
+    filter: invert(1);
+}
+
+body.light-mode .branch-brand {
+    filter: invert(1);
+}
+
+body .light-image {
+    display: none;
+}
+
+body.light-mode .dark-image {
+    display: none;
+}
+
+body.light-mode .light-image {
+    display: inline-block;
+}
+
+body.light-mode .home-menu--item {
+    color: #000;
+}
+
+body.light-mode .home-menu--item .outlined-text {
+    color: #fff;
+    text-shadow: -1px 0 0 #000, 0 -1px 0 #000, 1px 0 0 #000, 0 1px 0 #000;
+    mix-blend-mode: multiply;
+}
+
+body.light-mode .boxed-container {
+    border-color: #000;
+    box-shadow: 7px 7px 0 0 #000;
+}
+
+body.light-mode .box-field,
+body.light-mode .g-page-count {
+    border-color: #000;
+    box-shadow: 4px 4px 0 0 #000;
+    color: #000;
+}
+
+body.light-mode .box-field:focus,
+body.light-mode .box-field:focus-visible,
+body.light-mode .box-field[data-wf-focus-visible] {
+    border-color: #000;
+    box-shadow: 0 0 0 0 #000;
+}
+
+/* Header Light Mode */
+body.light-mode .brand {
+    filter: invert(1);
+}
+
+body.light-mode .tl {
+    background-color: #000;
+}
+
+@media screen and (min-width: 480px) {
+    body.light-mode .header-line {
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body.light-mode .header-line {
+        border-bottom: 3px solid #000 !important;
+        border-left: 3px solid #000 !important;
+        background-color: rgb(255 255 255 / 55%) !important;
+    }
+}
+
+body.light-mode .message,
+body.light-mode .navigation-item {
+    color: #000;
+}
+
+body.light-mode .menu-wrapper {
+    background-color: #fff;
+}
+
+body.light-mode .mode_icon {
+    color: #000;
 }
